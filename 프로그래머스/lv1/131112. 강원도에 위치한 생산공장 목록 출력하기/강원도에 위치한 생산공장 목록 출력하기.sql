@@ -1,7 +1,7 @@
 -- 코드를 입력하세요
-SELECT FACTORY_ID
-, FACTORY_NAME
-, ADDRESS
-FROM FOOD_FACTORY
-WHERE substr(address, 1, 3) = '강원도'
-ORDER BY FACTORY_ID ASC;
+SELECT factory_id
+, factory_name
+, address
+from food_factory
+where left(address, 3) = '강원도'
+order by factory_id asc;
